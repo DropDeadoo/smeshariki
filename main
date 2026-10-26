@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Смешарики в аналитике — командный портрет</title>
+<style>
+:root{--navy:#142b53;--blue:#2991eb;--purple:#7f57dc;--teal:#12a497;--orange:#f4912c;--ink:#263041;--muted:#637084;--cream:#faf9f5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1120px;margin:auto;padding:0 22px}.hero{background:linear-gradient(135deg,#dff2ff,#f2ecff 60%,#fff0d9);padding:64px 0 42px;overflow:hidden}
+.kicker{text-transform:uppercase;letter-spacing:.12em;color:#237bc8;font-weight:800;font-size:.78rem}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:.98;letter-spacing:-.055em;color:var(--navy);margin:14px 0 20px}h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.1;color:var(--navy);letter-spacing:-.035em;margin:0 0 10px}h3{margin:0 0 8px;color:var(--navy)}p{margin:0 0 12px}.lead{font-size:1.2rem;max-width:560px}.hero-art{width:100%;border-radius:24px;box-shadow:0 18px 45px #142b5320;display:block}
+.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.pill{border-radius:999px;background:#fff;padding:9px 14px;font-weight:750;color:var(--navy);box-shadow:0 4px 14px #142b5310}
+section{padding:60px 0}.sub{color:var(--muted);margin-bottom:28px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{padding:24px;border-radius:22px;background:#fff;border:1px solid #e7eaf0;box-shadow:0 8px 24px #142b5308}.card.blue{background:#e5f4ff}.card.purple{background:#f2ebff}.card.teal{background:#e4f8f5}.card.orange{background:#fff2e0}.card.red{background:#ffebea}.tag{font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:8px}.big{font-size:2.2rem;font-weight:850;color:var(--navy);line-height:1.1}.muted{color:var(--muted)}ul{padding-left:1.2rem;margin:12px 0 0}li{margin:6px 0}
+.composition{display:grid;grid-template-columns: .85fr 1.15fr;gap:28px;align-items:center}.bar{height:14px;border-radius:20px;background:#e7edf5;overflow:hidden;margin:10px 0 20px}.bar span{height:100%;display:block;border-radius:20px}.role{display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;margin:14px 0}.dot{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900}.role strong{display:block;color:var(--navy)}.role small{color:var(--muted)}
+.quote{font-size:clamp(1.3rem,3vw,2rem);font-weight:800;color:var(--navy);letter-spacing:-.02em}.footer{padding:28px 0 44px;color:var(--muted);font-size:.9rem;border-top:1px solid #e5e8ee}
+.cta{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:12px;margin-top:12px}
+@media(max-width:760px){.hero-grid,.composition,.grid{grid-template-columns:1fr}.hero{padding-top:42px}.hero-art{max-height:330px;object-fit:cover;object-position:top}.role{grid-template-columns:42px 1fr}.role .share{grid-column:2}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="kicker">Командный портрет · Analytics edition</div>
+   <h1>Смешарики<br>в аналитике</h1>
+   <p class="lead">Разные характеры — одна цель: превращать данные в решения.</p>
+   <div class="pillrow"><span class="pill">🐰 3 Кроша</span><span class="pill">🐦 1 Кар-Карыч</span><span class="pill">🦌 1 Лосяш</span><span class="pill">🐻 1 Копатыч</span></div>
+  </div>
+  <img class="hero-art" src="team-illustration.png" alt="Иллюстрация команды Смешариков">
+ </div>
+</header>
+<main>
+<section>
+ <div class="wrap">
+  <div class="kicker">01 · Состав</div><h2>Кто есть кто</h2><p class="sub">В команде 6 человек. Кроши — половина состава, остальные роли представлены по одному человеку.</p>
+  <div class="composition">
+   <div class="card">
+    <div class="big">6 человек</div><p class="muted">4 условных архетипа</p>
+    <div style="font-weight:800;color:var(--blue)">Кроши · 50%</div><div class="bar"><span style="width:50%;background:var(--blue)"></span></div>
+    <div style="font-weight:800;color:var(--purple)">Кар-Карыч · 17%</div><div class="bar"><span style="width:17%;background:var(--purple)"></span></div>
+    <div style="font-weight:800;color:var(--teal)">Лосяш · 17%</div><div class="bar"><span style="width:17%;background:var(--teal)"></span></div>
+    <div style="font-weight:800;color:var(--orange)">Копатыч · 17%</div><div class="bar"><span style="width:17%;background:var(--orange)"></span></div>
+   </div>
+   <div>
+    <div class="role"><div class="dot" style="background:var(--blue)">К</div><div><strong>Крош — инициатива и идеи</strong><small>Скорость, гипотезы, эксперименты и исследование</small></div><b class="share">×3</b></div>
+    <div class="role"><div class="dot" style="background:var(--purple)">КК</div><div><strong>Кар-Карыч — коммуникация</strong><small>Заказчики, презентации и объяснение выводов</small></div><b class="share">×1</b></div>
+    <div class="role"><div class="dot" style="background:var(--teal)">Л</div><div><strong>Лосяш — экспертиза</strong><small>Методология, логика, проверка гипотез</small></div><b class="share">×1</b></div>
+    <div class="role"><div class="dot" style="background:var(--orange)">КП</div><div><strong>Копатыч — реализация</strong><small>Практичность, приоритеты и доведение до результата</small></div><b class="share">×1</b></div>
+   </div>
+  </div>
+ </div>
+</section>
+<section style="background:#f0f6fc">
+ <div class="wrap"><div class="kicker">02 · Сильные стороны</div><h2>Почему команда может быть крутой</h2><p class="sub">Идеальный сценарий — когда разные роли усиливают друг друга.</p>
+  <div class="grid">
+   <article class="card blue"><div class="tag">🐰 Кроши</div><h3>Генерация идей</h3><ul><li>Быстрый старт</li><li>Много гипотез и вариантов</li><li>Любовь к экспериментам</li></ul></article>
+   <article class="card purple"><div class="tag">🐦 Кар-Карыч</div><h3>Связь с бизнесом</h3><ul><li>Помогает договориться о KPI</li><li>Упаковывает результаты</li><li>Видит контекст заказчика</li></ul></article>
+   <article class="card teal"><div class="tag">🦌 Лосяш</div><h3>Методология и качество</h3><ul><li>Глубокие расчёты</li><li>Проверка логики</li><li>Поиск причинно-следственных связей</li></ul></article>
+   <article class="card orange"><div class="tag">🐻 Копатыч</div><h3>Доведение до результата</h3><ul><li>Приземляет идеи</li><li>Удерживает фокус на приоритетах</li><li>Помогает внедрять выводы</li></ul></article>
+  </div>
+ </div>
+</section>
+<section>
+ <div class="wrap"><div class="kicker">03 · Зоны внимания</div><h2>Риски и возможные конфликты</h2><p class="sub">Это не предсказание, а список сценариев, за которыми полезно наблюдать.</p>
+  <div class="grid">
+   <article class="card red"><h3>⚠️ Основные риски</h3><ul><li><b>Слишком много параллельных идей:</b> Кроши могут распыляться.</li><li><b>Узкое место в ревью:</b> методология может зависеть от одного эксперта.</li><li><b>Перегрузка коммуникацией:</b> один человек не должен быть единственным мостом к заказчикам.</li><li><b>Операционные хвосты:</b> практичные задачи не должны автоматически доставаться одному человеку.</li></ul></article>
+   <article class="card purple"><h3>💬 Возможные трения</h3><ul><li>Скорость против качества.</li><li>Идеи против внедрения.</li><li>Глубина анализа против простоты объяснения.</li><li>Разные ожидания по срокам и приоритетам.</li></ul></article>
+  </div>
+ </div>
+</section>
+<section style="background:#f0f6fc">
+ <div class="wrap"><div class="kicker">04 · Рекомендации</div><h2>Как усилить команду</h2><p class="sub">Не менять состав — выстроить понятные правила взаимодействия.</p>
+  <div class="grid">
+   <article class="card blue"><h3>1. Развести роли на старте</h3><p>Кто формирует гипотезы, кто отвечает за методологию, кто согласует выводы, кто ведёт внедрение.</p></article>
+   <article class="card purple"><h3>2. Ротировать ответственность</h3><p>Не превращать Лосяша в вечное ревью, а Копатыча — в человека для всех незакрытых задач.</p></article>
+   <article class="card teal"><h3>3. Договориться о стандартах</h3><p>Единые определения метрик, шаблон постановки задачи, критерии готовности и короткое ревью.</p></article>
+   <article class="card orange"><h3>4. Оставить время на синергию</h3><p>Регулярные разборы сложных задач, обмен идеями и ретро: что сработало и что улучшить.</p></article>
+  </div>
+ </div>
+</section>
+<section>
+ <div class="wrap grid" style="align-items:center">
+  <div><div class="kicker">05 · Вердикт</div><h2>Аналитика с характером</h2><p class="quote">«Мы не просто анализируем данные. Мы помогаем бизнесу видеть дальше».</p></div>
+  <div class="card"><h3>Итог</h3><ul><li>Много инициативы и энергии</li><li>Есть экспертная опора для качества</li><li>Есть связь между аналитикой и бизнесом</li><li>Есть фокус на практическом результате</li></ul><p style="margin-top:18px"><b>Следующий уровень:</b> приоритеты, общие процессы и взаимозаменяемость.</p></div>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap">Игровая интерпретация архетипов, а не психологическая диагностика. Состав команды: 3 Кроша · 1 Кар-Карыч · 1 Лосяш · 1 Копатыч.</div></footer>
+</body></html>
